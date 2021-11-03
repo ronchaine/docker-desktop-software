@@ -1,8 +1,7 @@
 #!/bin/sh
 export DISPLAY=${DISPLAY:-:0}
 
-#docker run --rm \
-docker run \
+docker run --rm --name steamboat_willie \
     -v /dev:/dev \
     -v /tmp:/tmp \
     -v /etc/machine-id:/etc/machine-id \
