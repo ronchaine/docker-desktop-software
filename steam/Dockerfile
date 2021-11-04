@@ -16,7 +16,7 @@ RUN echo "[multilib]" >> /etc/pacman.conf && \
 RUN localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF8
 
 # route pulse to host
-COPY ../common/pulse-client.conf /etc/pulse/client.conf
+COPY route-pulseaudio-to-host.conf /etc/pulse/client.conf
 
 # Configure rest
 RUN useradd -m steam \
